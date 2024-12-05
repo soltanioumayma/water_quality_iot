@@ -1,0 +1,38 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/im"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/giftMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliquez sur la boîte mystère pour révéler votre cadeau!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <ImageView
+        android:id="@+id/mysteryBox"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/img_58"
+        android:contentDescription="Mystery Box"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="20dp" />
+    <Button
+        android:id="@+id/knowMoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="know more about sensors"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_blue"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/im"
+    android:padding="20dp">
+
+    <!-- Title Section with gradient background -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details And Advice"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="70dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <!-- Section for pH -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@drawable/rounded_background"
+        android:onClick="showPhDetails"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/ph_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unlock pH facts - click now!"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Section for Conductivity -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@drawable/rounded_background"
+        android:onClick="showConductivityDetails"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/conductivity_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All about conductivity – click now!"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Section for Salinity -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="@drawable/rounded_background"
+        android:onClick="showSalinityDetails"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:id="@+id/salinity_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All about salinity – explore more!"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Inspirational Quote Section -->
+    <TextView
+        android:id="@+id/quoteText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="The health of our water determines the health of our planet 🌍🌱"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:padding="15dp" />
+
+    <!-- Learn More Button -->
+    <Button
+        android:id="@+id/btnLearnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="30dp"
+        android:text="Learn More"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/light_blue" />
+
+    <!-- Show Real-Time Data Button -->
+    <Button
+        android:id="@+id/btnRealTimeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="30dp"
+        android:text="Real-Time Data"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/light_blue" />
+
+</LinearLayout>

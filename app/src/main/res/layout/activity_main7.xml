@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/im"
+    android:padding="16dp">
+
+  <!-- Top Navigation -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/waterr_image"
+        android:layout_width="70dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Plant Image"
+        android:src="@drawable/img_19" />
+
+    <ImageView
+        android:id="@+id/cond_image"
+        android:layout_width="90dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Plant Image"
+        android:src="@drawable/img_16" />
+
+    <ImageView
+        android:id="@+id/water_image"
+        android:layout_width="90dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Plant Image"
+        android:src="@drawable/img_77" />
+
+    <ImageView
+        android:id="@+id/ph_image"
+        android:layout_width="90dp"
+        android:layout_height="175dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Plant Image"
+        android:src="@drawable/img_74" />
+
+  </LinearLayout>
+
+  <TextView
+      android:id="@+id/plant_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="salinity value/conductivity value/ph value"
+      android:textSize="18sp"
+      android:textStyle="italic"
+      android:layout_gravity="center"
+      android:textColor="@color/black"
+      android:layout_marginTop="16dp" />
+
+  <TextView
+      android:id="@+id/plant_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Date : 07-12-2024"
+      android:textStyle="italic"
+      android:textColor="@color/black"
+      android:textSize="17sp"
+      android:layout_marginTop="8dp" />
+
+  <!-- Real-time Data Section -->
+  <TextView
+      android:id="@+id/real_time_label"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Real-time data !"
+      android:textSize="25sp"
+      android:layout_gravity="center"
+      android:textStyle="bold"
+      android:background="@color/light_blue"
+      android:textColor="@color/black"
+      android:layout_marginTop="16dp" />
+
+  <LinearLayout
+      android:id="@+id/data_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="16dp">
+
+    <!-- PH Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+      <TextView
+          android:id="@+id/ph1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="7"
+          android:textSize="20sp"
+          android:textStyle="bold" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="PH"
+          android:textStyle="bold"
+          android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Salinity Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+      <TextView
+          android:id="@+id/sal_data"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="0.5 mg/l"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Salinity"
+          android:textStyle="bold"
+          android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- Conductivity Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+      <TextView
+          android:id="@+id/cond_data"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="1000 µS/cm"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Conductivity"
+          android:textStyle="bold"
+          android:textSize="19sp" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <!-- Additional Derived Data Section -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="16dp">
+
+    <!-- Osmotic Pressure Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+      <TextView
+          android:id="@+id/osmotic_data"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="0.1 atm"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Osmotic Pressure"
+          android:textStyle="bold"
+          android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Hardness Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+      <TextView
+          android:id="@+id/hardness_data"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="50 mg/L"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Hardness"
+          android:textStyle="bold"
+          android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Resistivity Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+      <TextView
+          android:id="@+id/resistivity_data"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="1000 Ω-cm"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Resistivity"
+          android:textStyle="bold"
+          android:textSize="18sp" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <!-- Horizontal Layout for Evaluation and New Button -->
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginTop="16dp"
+      android:gravity="center">
+
+    <Button
+        android:id="@+id/tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Evaluation"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <!-- New Button Added Next to Evaluation -->
+    <Button
+        android:id="@+id/new_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tips and Tricks"
+        android:backgroundTint="@color/light_blue"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp" />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/water_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="@color/light_blue"
+      android:text="Water checked today? Tap to confirm"
+      android:textStyle="bold"
+      android:textColor="@color/black"
+      android:textSize="14sp" />
+</LinearLayout>

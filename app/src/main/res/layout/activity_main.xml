@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/img_93"
+    android:padding="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="left"
+        android:text="pH = -log[H⁺]"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="right"
+        android:text="ρ = m/V"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginRight="80dp"
+        android:text="H₂O → H⁺ + OH⁻"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginLeft="80dp"
+        android:text="Q = mcΔT"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.7" />
+
+    <!-- Main container for the welcome message -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@color/semi_transparent"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:clipToPadding="false">
+        <!-- Welcome Title with custom font -->
+
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Welcome to H2OMG!"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3" />
+
+        <!-- Custom Icon Button with ripple effect -->
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/light_blue"
+            android:text="Let's get started"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Additional creative feature: Subtitle or description -->
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Shaping the Future: Intelligent Water Control"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:alpha="0.7" />
+
+    </LinearLayout>
+
+    <!-- Footer with animated elements -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_96"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Facebook Icon" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_95"
+            android:contentDescription="Instagram Icon" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="Instagram Icon"
+            android:src="@drawable/img_94" />
+    </LinearLayout>
+
+    <!-- Footer with year and copyright details -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="© 2024/2025 H2OMG. All Rights Reserved."
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:alpha="0.8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Developed with ❤️ by Team H2OMG"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="thanks for supporting us "
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.7" />
+</LinearLayout>
