@@ -1,4 +1,4 @@
-# 🌊 AquaSense - Water Quality Control System  
+# 🌊 H2OMG - Water Quality Control System  
 
 **AquaSense** is an IoT-based solution designed to monitor and control water quality in real-time. This Android application leverages Firebase to provide users with accurate, up-to-date data on pH levels and conductivity of water, ensuring safety and reliability. The system is designed for environmental monitoring, agriculture, and industrial applications where water quality is critical.  
 
